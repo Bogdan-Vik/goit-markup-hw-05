@@ -623,6 +623,8 @@ margin-top: 0;
     color: var(--primary-text-color);
     position: relative;   
     overflow: hidden;
+    transition: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .text-portfolio{
     align-items: center;
@@ -636,6 +638,7 @@ margin-top: 0;
     top: 75%;
     z-index: 1;
     transition: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .link-portfolio:hover .text-portfolio,
 .link-portfolio:focus .text-portfolio{
@@ -682,6 +685,7 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
       0px 2px 1px rgba(0, 0, 0, 0.2);
      border-radius: 4px;
      transition: 250ms;
+     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 .close-button{
