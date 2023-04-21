@@ -36,8 +36,7 @@ line-height: 1.14;
 letter-spacing: 0.02em;
 color: var(--primary-text-color);
 letter-spacing: 0.02em;
-transition: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .link:hover,
 .link:focus{
@@ -241,8 +240,7 @@ border-radius: 4px;
 border: none;
     color: var(--text-color);
     background: var(--accent-color);
-    transition: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition:color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .main-button:hover,
 .main-button:focus{
@@ -412,15 +410,13 @@ margin-top: 30px;
     width: 44px;
     height: 44px;
     border-radius: 50%;
-    transition: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition:background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .workers{
     width: 20px;
     height: 20px;
     fill: var(--social-color);
-    transition: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition:fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .workers-social{
     display: flex;
@@ -444,6 +440,14 @@ margin-right: 10px;
     fill: var(--accent-color);
     border-color: var(--accent-color);
 }
+.company-style{
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
+}
+.company-margin:not(:last-child){
+margin-right: 30px;
+}
 .company-link{
     display: flex;
     width: 170px;
@@ -455,8 +459,7 @@ margin-right: 10px;
     border-style: solid;
     border-width: 1px;
     border-color: var(--social-color);
-    transition: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-position{
     display: flex;
@@ -487,13 +490,13 @@ text-transform: uppercase;
     height: 44px;
     border-radius: 50%;
     background: rgba(255, 255, 255, 0.1);
-    transition: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition:background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .workers-footer{
     width: 20px;
     height: 20px;
     fill: var(--text-color);
+    transition:fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .workers-link-footer:focus,
 .workers-link-footer:hover{
@@ -502,14 +505,6 @@ text-transform: uppercase;
 .footer-address-position{
     width: 230px;
     margin-right: 70px;
-}
-.company-style{
-    margin-top: 0;
-    display: flex;
-    justify-content: center;
-}
-.company-margin:not(:last-child){
-margin-right: 30px;
 }
 /*=================/TEXT=================*/
 
@@ -548,10 +543,9 @@ padding-top: 32px;
     text-align: center;
     letter-spacing: 0.03em;
     border: none;
-background: var(--background-buttons-color);
-border-radius: 4px;
-transition: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  background: var(--background-buttons-color);
+  border-radius: 4px;
+   transition:color  250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button:hover,
 .button:focus{
@@ -623,8 +617,7 @@ margin-top: 0;
     color: var(--primary-text-color);
     position: relative;   
     overflow: hidden;
-    transition: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition:color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .text-portfolio{
     align-items: center;
@@ -637,8 +630,7 @@ margin-top: 0;
     bottom: 0;
     top: 75%;
     z-index: 1;
-    transition: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition:top 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .link-portfolio:hover .text-portfolio,
 .link-portfolio:focus .text-portfolio{
@@ -669,8 +661,13 @@ left: 0;
 width: 100vw;
 height: 100vh;
 background-color:rgba(0, 0, 0, 0.2);
-transition: 250ms;
-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+transition:250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.backdrop.is-hidden .modal-window{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0.5);
+
 }
 .modal-window{
     position: absolute;
@@ -684,8 +681,7 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
      0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 2px 1px rgba(0, 0, 0, 0.2);
      border-radius: 4px;
-     transition: 250ms;
-     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 .close-button{
